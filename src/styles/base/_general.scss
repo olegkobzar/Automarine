@@ -19,8 +19,9 @@ body {
     outline: none;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, ul, ol, p {
     margin: 0;
+    padding: 0;
 }
 
 ul, ol {
@@ -31,6 +32,8 @@ ul, ol {
 
 a {
     text-decoration: none;
+    color: $main-color;
+    @include trs;
 }
 
 table {
@@ -38,12 +41,20 @@ table {
     border-collapse: collapse;
 }
 
-.wrapper {
-    overflow: hidden;
-}
-
 .container {
     max-width: $container-width;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.caption {
+    display: block;
 }
