@@ -21,4 +21,10 @@
 @mixin trs {
     transition: all .3s;
 }
+
+@mixin fcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   
