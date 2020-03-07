@@ -73,6 +73,9 @@ table {
 
 .caption {
   display: block;
+  font-family: "Bebas Neue";
+  font-size: 56px;
+  line-height: 1.2;
 }
 
 button,
