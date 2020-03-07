@@ -57,4 +57,7 @@ table {
 
 .caption {
     display: block;
+    font-family: $caption-ff;
+    font-size: $caption-fz;
+    line-height: $caption-lh;
 }
