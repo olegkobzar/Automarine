@@ -2,20 +2,20 @@ button,
 .btn {
     display: block;
     width: 100%;
-    padding: 10px 20px;
+    padding: 20px 0;
     border-radius: 3px;
-    background-color: $color-btn;
-    color: #767982;
+    background-color: $hover-btn;
     text-align: center;
-    font-family: $main-ff;
-    font-size: 13px;
-    font-weight: 600;
+    font-family: $second-ff;
+    font-size: 22px;
+    font-weight: 400;
     line-height: 1;
     text-transform: uppercase;
+    border: none;
+    cursor: pointer;
     @include trs;
 
     &:hover {
-        background-color: $hover-btn;
-        color: $main-color;
+        background-color: #8f9197;
     }
 }
