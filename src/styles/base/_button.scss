@@ -4,7 +4,7 @@ button,
     width: 100%;
     padding: 20px 0;
     border-radius: 3px;
-    background-color: $hover-btn;
+    background-color: $bg-btn;
     text-align: center;
     font-family: $second-ff;
     font-size: 22px;
@@ -16,6 +16,6 @@ button,
     @include trs;
 
     &:hover {
-        background-color: #8f9197;
+        background-color: $hover-btn;
     }
 }
