@@ -13,11 +13,6 @@ input[type="text"] , select {
     }
 }
 
-span {
-    color: $gray-heading;
-}
-
-
 select {
     cursor: pointer;
 }
@@ -35,8 +30,6 @@ select {
         position: relative;
         padding-left: 30px;
         cursor: pointer;
-
-        
 
         &::before {
             position: absolute;
@@ -135,11 +128,13 @@ select {
             }
         }
     }
-}
 
-.radio__other {
-    span {
-        background-color: #dddfe2;
-        color: #767982;
+    &--other-radio {
+        span {
+            background-color: #dddfe2;
+            color: #767982;
+        }
     }
 }
+
+
