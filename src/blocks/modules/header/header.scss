@@ -3,29 +3,127 @@
     &__wrap {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         height: 120px;
     }
 
     &__logo {
+        max-width: 178px;
 
-        max-width: 100%;
+        a {
+            display: block;
+        }
+
         img {
             width: 100%;
         }
     }
 
+    // -------------------BURGER BTN
+    &__burger-position {
+        @include b(tablet) {
+            display: flex;
+        }
+        display: none;
+    }
+
+
+    &__btn-menu {
+        position: relative;
+        width: 16px;
+        height: 12px;
+        margin-top: 12px;
+
+        span {
+            @include trs;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $main-color;
+
+            &:nth-child(2) {
+                top: 5px;
+            }
+
+            &:nth-child(3) {
+                top: 10px;
+            }
+        }
+
+        &.active {
+            span {
+
+                &:nth-child(1) {
+                    top: 1px;
+                    transform: rotate(-45deg);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    top: 1px;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+
+    /// ------------------BURGER BTN
+
+    &__nav-wrap {
+        @include b(tablet) {
+            @include fcenter;
+            min-height: 100vh;
+            padding: 30px 0;
+        }
+    }
+        
+
+    &__nav-outer {
+        @include b(tablet) {
+            display: none;
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            overflow: auto;
+            background-color: #000;
+        }
+    }
+
     &__nav {
+        @include b(tablet) {
+            flex-direction: column;
+        }
         display: flex;
         justify-content: space-between;
         width: 100%;
     }
 
     &__nav-list {
+        @include b(tablet) {
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
         display: flex;
         align-items: center;
     }
 
     &__nav-item {
+        @include b(1104) {
+            padding-right: 20px;
+        }
+        @include b(tablet) {
+            padding-right: 0;
+            margin-bottom: 20px;
+        }
         padding-right: 40px;
         font-family: $two-ff;
         font-size: 13px;
@@ -33,6 +131,12 @@
         text-transform: uppercase;
 
         &:first-child {
+            @include b(1126) {
+                padding-left: 25px;
+            }
+            @include b(tablet) {
+                padding-left: 0;
+            }
             padding-left: 50px;
         }
         a {
@@ -45,16 +149,24 @@
     }
 
     &__nav-contact {
+        @include b(tablet) {
+            flex-direction: column;
+        }
         display: flex;
         align-items: center;
     }
 
     &__nav-contact-item {
+        @include b(tablet) {
+            padding-right: 0;
+            margin-bottom: 20px;
+        }
         font-weight: 600;
         font-family: $two-ff;
         text-transform: uppercase;
         font-size: 13px;
         padding-right: 20px;
+        
 
         a {
             @include trs;
