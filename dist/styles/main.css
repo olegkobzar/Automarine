@@ -250,15 +250,3 @@ button:hover,
 .btn:hover {
   background-color: #8f9197;
 }
-
-button--color,
-.btn--color {
-  background-color: #8f9197;
-  text-transform: none;
-}
-
-button--color:hover,
-.btn--color:hover {
-  background-color: #e5002e;
-}
-/*# sourceMappingURL=maps/main.css.map */
