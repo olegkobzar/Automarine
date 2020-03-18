@@ -18,4 +18,17 @@ button,
     &:hover {
         background-color: $hover-btn;
     }
+
+    &--color {
+        background-color: $hover-btn;
+        text-transform: none;
+
+        &:hover {
+            background-color: $bg-btn;
+        }
+    }
 }
+
+
+
+
