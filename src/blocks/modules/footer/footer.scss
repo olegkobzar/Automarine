@@ -105,6 +105,11 @@
             display: block;
             margin-bottom: 15px;
         }
+
+        p {
+            font-family: $two-ff;
+            font-weight: 400;
+        }
     }
 
     &__contact-addres-link {
@@ -114,6 +119,8 @@
         
         a {
             font-size: $second-fz;
+            font-family: $two-ff;
+            font-weight: 400;
             &:hover {
                 color: #bebdc1;
             }
@@ -164,8 +171,8 @@
 
     &__service-item {
         display: flex;
+        flex: 0 1 50%;
         flex-direction: column;
-        width: 50%;
         margin-bottom: 40px;
 
         &:nth-child(3) {
@@ -179,7 +186,7 @@
 
         a {
             font-size: $second-fz;
-            margin-bottom: 10px;
+            margin-bottom: 7px;
 
             &:hover {
                 color: #bebdc1;
